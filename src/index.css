@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base{
+  :root {
+    --primary:#f07510; 
+
+  }
+}
+
+@layer utilities{
+  .bg-primary {
+    background-color: var(--primary);
+  }
+
+  .text-primary {
+    color: var(--primary);
+  }
+
+  .from-primary {
+    --tw-gradient-from: var(--primary);
+  }
+
+  .to-primary {
+    --tw-gradient-to: var(--primary);
+  }
+
+  .via-primary {
+    --tw-gradient-via: var(--primary);
+  }
+}
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
